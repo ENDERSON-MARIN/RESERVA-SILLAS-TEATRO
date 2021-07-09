@@ -6,7 +6,25 @@ SENA(Servicio Nacional de Aprendizaje), curso Desarrollo Web con PHP.
 # Screenshot
 ![](/inicio.png)
 
+# Project Rules
 
+Para las transacciones se tienen las siguientes reglas:
+
+1)  Solo se modifica la información de un puesto a la vez.
+2)	Si el puesto está libre debe aparecer la letra “L” en mayúscula (L), si el
+puesto está reservado debe mostrar la letra “R” en mayúscula (R), si el
+puesto está vendido debe aparecer la letra “V” en mayúscula (V).
+3)  Un puesto en estado libre (L) puede ser pasado a estado vendido (V)
+(mediante la opción comprar) o reservado (R).
+
+4)  Un puesto en estado reservado (R) puede ser pasado a estado vendido
+(V) o liberado (L).
+5)	Un puesto en estado vendido (V) no puede cambiar a estado reservado
+(R) ni liberado (L).
+6)  Siempre que el usuario intente hacer una operación no valida (como
+pasar un puesto en estado vendido (V) ha estado liberado (L)), el sistema
+debe mostrarle un mensaje (puede hacerse usando JavaScript) que le
+indique que la operación no pudo realizarse.
 
 ## Getting Started
 
